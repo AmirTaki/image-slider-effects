@@ -32,6 +32,18 @@
     /* 3d */
     transform-style: preserve-3d ;
     transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+
+@keyframes autoRun {
+    from{
+         transform : perspective(1000px) rotateY(0deg)
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+   
+    
 }
 
 .banner .slider .item {
@@ -40,8 +52,7 @@
     
     /* transform :  (position - 1) * (360 deg / quantity ) */ 
     transform: 
-        rotateY(calc( (var(--positon) -1 ) * (360 / var(--quanitity)) )) 
-        translateZ(550px);
+         rotateY(calc( ( var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(550px);
     
 }
 
