@@ -38,8 +38,10 @@
     position: absolute;
     inset : 0 0 0 0 ;
     
-    /* transform */
-    transform: translateZ(550px);
+    /* transform :  (position - 1) * (360 deg / quantity ) */ 
+    transform: 
+        rotateY(calc( (var(--positon) -1 ) * (360 / var(--quanitity)) )) 
+        translateZ(550px);
     
 }
 
