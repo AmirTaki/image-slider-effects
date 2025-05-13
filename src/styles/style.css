@@ -12,11 +12,19 @@
     height: 250px;
     top :10%;
     left: calc(50% - 100px);
+
+    /* 3d */
+    transform-style: preserve-3d ;
+    transform: perspective(1000px);
 }
 
 .banner .slider .item {
     position: absolute;
     inset : 0 0 0 0 ;
+    
+    /* transform */
+    transform: translateZ(550px);
+    
 }
 
 .banner .slider .item img {
