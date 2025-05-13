@@ -1,3 +1,19 @@
+/* 
+    Diatance of each item : 360 deg / quantity 
+    360 / 4 = 90 deg
+
+    rotateY of item aot positon :
+    (position - 1) * (360 deg / quantity )
+
+    => (1)
+    (1 - 1) * (360 deg / 4) = 0 * 90 deg = 0 deg
+
+    => (2)
+    (2 - 1) * (360 deg / 4) = 1 * 90 deg = 90 deg
+    
+*/
+
+
 .banner {
     width: 100%;
     height: 100vh;
